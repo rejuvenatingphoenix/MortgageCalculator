@@ -1,0 +1,78 @@
+﻿@model IEnumerable<MortgageCalculator.Dto.Mortgage>
+
+@{
+    ViewBag.Title = "Mortgage List";
+}
+
+<h3>Mortgage Calculator</h3>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>
+                    Select
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MortgageType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InterestRate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EffectiveStartDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EffectiveEndDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CancellationFee)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EstablishmentFee)
+                </th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+    {
+            <tr>
+                <td>
+                    @Html.RadioButton("MortageRate", item.InterestRate, item.MortgageType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td class="mortype">
+                    @Html.DisplayFor(modelItem => item.MortgageType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InterestRate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EffectiveStartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EffectiveEndDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CancellationFee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EstablishmentFee)
+                </td>
+            </tr>
+    }
+
+    </table>
+</div>
+
+
+<div id="calculateinerest">
+
+</div>
+
+
+

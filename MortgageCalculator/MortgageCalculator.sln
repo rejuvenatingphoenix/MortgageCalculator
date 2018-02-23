@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortgageCalculator.Web", "MortgageCalculator.Web\MortgageCalculator.Web.csproj", "{B899BA79-2CDF-4125-8154-517070193A87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortgageCalculator.UnitTests", "MortgageCalculator.UnitTests\MortgageCalculator.UnitTests.csproj", "{59759B85-0BED-49B9-A568-A232D425D010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortgageCalculator.Api", "MortgageCalculator.Api\MortgageCalculator.Api.csproj", "{DB707F8C-25F5-4347-8E67-457050BF88C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortgageCalculator.Dto", "MortgageCalculator.Dto\MortgageCalculator.Dto.csproj", "{B0628D9A-6370-4FDF-B285-D8092A057622}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B5E0C29-3A75-4990-A1E9-0973E7610E7C}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions.txt = Instructions.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{E7EF2BAF-1B1D-4F67-B8DB-5F3A743927B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tasks", "tasks", "{A33BEB8A-7E3A-4958-8B56-E8656251B82A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{5655809F-DAB0-4F8A-B179-145EF9034A9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B899BA79-2CDF-4125-8154-517070193A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B899BA79-2CDF-4125-8154-517070193A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B899BA79-2CDF-4125-8154-517070193A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B899BA79-2CDF-4125-8154-517070193A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59759B85-0BED-49B9-A568-A232D425D010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59759B85-0BED-49B9-A568-A232D425D010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59759B85-0BED-49B9-A568-A232D425D010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59759B85-0BED-49B9-A568-A232D425D010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB707F8C-25F5-4347-8E67-457050BF88C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB707F8C-25F5-4347-8E67-457050BF88C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB707F8C-25F5-4347-8E67-457050BF88C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB707F8C-25F5-4347-8E67-457050BF88C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0628D9A-6370-4FDF-B285-D8092A057622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0628D9A-6370-4FDF-B285-D8092A057622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0628D9A-6370-4FDF-B285-D8092A057622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0628D9A-6370-4FDF-B285-D8092A057622}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A33BEB8A-7E3A-4958-8B56-E8656251B82A} = {E7EF2BAF-1B1D-4F67-B8DB-5F3A743927B3}
+		{5655809F-DAB0-4F8A-B179-145EF9034A9D} = {E7EF2BAF-1B1D-4F67-B8DB-5F3A743927B3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08382F61-030E-4FB6-91CC-75304575F348}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

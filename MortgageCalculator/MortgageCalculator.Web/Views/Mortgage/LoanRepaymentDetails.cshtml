@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "LoanDetails";
+}
+
+@model  MortgageCalculator.Dto.LoanDetails
+
+<div class="row">
+    <div class="col-md-12">
+        <form id="loanForm"  method="post" action="/Mortgage/GetLoanRepaymentDetails">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Calculator</legend>
+
+                <div class="form-group  row">
+                    <label class="col-md-2 control-label">Selected Interest Rate</label>
+                    <div class="col-md-10">
+                        @if (@ViewBag.InterestRate != null)
+                        {
+                            <label>@ViewBag.InterestRate</label>
+                            <input type="hidden" name="InterestRate" value="@ViewBag.InterestRate" id="InterestRate" />
+                        }
+                        else
+                        {
+                            <label>@Model.InterestRate</label>
+                        }
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group row">
+                    <label class="col-md-2 control-label" for="textinput">Loan Amount</label>
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(Model => Model.LoanAmount, new { @class = "form-control input-md loan_amount",required = "",type="number"})
+                        <span class="help-block">Enter the amount to borrow</span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 control-label" for="textinput">No of Years</label>
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(Model => Model.NoofYears, new { @class = "form-control input-md no_0fyear", required = "", type = "number" })
+                        <span class="help-block">Enter Loan tenure as No of Years</span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 control-label" for="textinput"></label>
+                    <div class="col-md-10">
+                        <input type="submit" id="formsubmit" value="Get Details" placeholder="0.00" class="form-control input-md" required="" style="font-weight:bold">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-md-2 control-label">Loan Repayment Amount</label>
+                    <div class="col-md-10">
+                        <label> @Model.TotalRepaymentAmount</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 control-label">Total Interest  Amount</label>
+                    <div class="col-md-10">
+                        <label> @Model.TotalInterest</label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

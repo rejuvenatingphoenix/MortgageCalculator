@@ -34,6 +34,7 @@ namespace MortgageCalculator.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/Mortagages.css",
                       "~/Content/site.css"));
         }
     }
